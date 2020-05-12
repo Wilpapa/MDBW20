@@ -1,0 +1,62 @@
+{
+    "id": "5eb90a9ca284b8deb37d9240",
+    "database": "world",
+    "collection": "iot",
+    "roles": [
+        {
+            "name": "default",
+            "apply_when": {},
+            "read": true,
+            "write": false,
+            "insert": false,
+            "delete": false,
+            "additional_fields": {}
+        }
+    ],
+    "schema": {
+        "title": "iot",
+        "properties": {
+            "_id": {
+                "bsonType": "objectId"
+            },
+            "id": {
+                "bsonType": "string"
+            },
+            "measureDate": {
+                "bsonType": "date"
+            },
+            "measureUnit": {
+                "bsonType": "string"
+            },
+            "missedMeasures": {
+                "bsonType": "int"
+            },
+            "periodAvg": {
+                "bsonType": "double"
+            },
+            "periodMax": {
+                "bsonType": "double"
+            },
+            "periodMin": {
+                "bsonType": "double"
+            },
+            "recordedMeasures": {
+                "bsonType": "int"
+            },
+            "values": {
+                "bsonType": "array",
+                "items": {
+                    "bsonType": "object",
+                    "properties": {
+                        "measureMinute": {
+                            "bsonType": "int"
+                        },
+                        "measuredValue": {
+                            "bsonType": "double"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

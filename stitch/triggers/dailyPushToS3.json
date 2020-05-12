@@ -1,0 +1,10 @@
+{
+    "id": "5ebac5957559e3a482819943",
+    "name": "dailyPushToS3",
+    "type": "SCHEDULED",
+    "config": {
+        "schedule": "0 */1 * * *"
+    },
+    "function_name": "updateTrigger",
+    "disabled": false
+}

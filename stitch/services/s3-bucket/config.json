@@ -1,0 +1,12 @@
+{
+    "id": "5eb567f7ed87fd81f64ccb46",
+    "name": "s3-bucket",
+    "type": "aws",
+    "config": {
+        "accessKeyId": "AKIA6IESFAOZ2ZM45LPY"
+    },
+    "secret_config": {
+        "secretAccessKey": "apikey"
+    },
+    "version": 1
+}
