@@ -8,13 +8,13 @@ client.auth.loginWithCredential(new AnonymousCredential()).then(user => {
   console.log(`logged in anonymously as user ${user.id}`)
 });
 
-createAllFiles("2020-01-01");
+createAllFiles("2019-01-01");
 client.close()
 return 0;
 
 async function createAllFiles(sdate) {
 	let startDate=new Date(sdate);
-	let numdays = 150
+	let numdays = 365
 	var i
 	for (i =0;i<numdays;i++) {
         	stringDate=startDate.toISOString().split('T')[0] 
